@@ -12,3 +12,7 @@ A-Frame component for [datGUIVR](https://github.com/dataarts/dat.guiVR)
       <a-gui-checkbox name="on or off" default="true"></a-gui-checkbox>
       <a-gui-button name="click me"></a-gui-button>
     </a-datgui>   
+
+Currently supports "stateless" controllers only, meaning you can't attach controllers directly to JS objects, however you can listen to controller changes and update anything accordingly.
+
+Each controller element will emit an "onChanged" event supplying the new value.    
