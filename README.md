@@ -1,5 +1,5 @@
 # aframe-datguivr
-A-Frame component for datGUIVR
+A-Frame component for [datGUIVR](https://github.com/dataarts/dat.guiVR)
 
 ## Example
 
@@ -11,4 +11,4 @@ A-Frame component for datGUIVR
       </a-gui-dropdown>
       <a-gui-checkbox name="on or off" default="true"></a-gui-checkbox>
       <a-gui-button name="click me"></a-gui-button>
-    </a-datgui>
+    </a-datgui>   
