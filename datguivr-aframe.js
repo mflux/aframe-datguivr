@@ -75,25 +75,35 @@ AFRAME.registerPrimitive('a-datgui', {
 
 AFRAME.registerComponent( 'guicontroller', {
   schema: {
+    type: {
+      type: 'string',
+      default: 'slider',
+      oneOf: [
+        'slider',
+        'dropdown',
+        'checkbox',
+        'button'
+      ]
+    },
     min: {
       type: 'number',
-      default: 0
+      default: 0,
+      if: {type: 'slider'}
     },
     max: {
       type: 'number',
-      default: 1
+      default: 1,
+      if: {type: 'slider'}
     },
     step: {
       type: 'number',
-      default: 0.1
-    },
-    type: {
-      type: 'string',
-      default: 'slider'
+      default: 0.1,
+      if: {type: 'slider'}
     },
     defaultValue: {
       type: 'boolean',
-      default: false
+      default: false,
+      if: {type: 'checkbox'}
     },
     name: {
       type: 'string',
